@@ -1,0 +1,14 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,400,500,600');
+
+// Font Variables
+$prompt: 'Prompt', sans-serif;
+$light: 300;
+$med: 500;
+$semi-bold: 600;
+
+// Styles
+body {
+    font-family: $prompt;
+    font-weight: 400;
+}
