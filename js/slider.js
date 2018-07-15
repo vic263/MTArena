@@ -10,7 +10,8 @@ $(document).ready(function(){
         respondTo:'min',
         cssEase:'linear',
         prevArrow:'<button class="PrevArrow"></button>',
-        nextArrow:'<button class="NextArrow"></button>', 
+        nextArrow:'<button class="NextArrow"></button>',
+         
       })
  
 

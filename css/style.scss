@@ -740,3 +740,17 @@ small{
 }
 
 .store-logos .PrevArrow:before{content:'\f104';}
+@media only screen and (max-width: 768px){
+  .latest-news .title{
+    margin-left: 0px;
+  }
+  .zone .title{
+    margin-left: 0px;
+  }
+  .Modern-Slider .NextArrow:before{display: none;}
+  .Modern-Slider .PrevArrow:before{display: none;}
+  .partner-logos .NextArrow:before{display: none;}
+  .partner-logos .PrevArrow:before{display: none;}
+  .store-logos .NextArrow:before{display: none;}
+  .store-logos .PrevArrow:before{display: none;}
+}
