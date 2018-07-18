@@ -10,7 +10,12 @@ body,html{
   height: 100vh;
   font-family: $prompt;
 }
-  
+.gsapScroll {
+  opacity: 0;
+}
+div[class*="gsapFadeIn"] {
+  opacity: 0;
+}  
 @mixin cf {
   &::before,
   &::after {
