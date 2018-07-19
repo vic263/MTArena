@@ -1,0 +1,163 @@
+@import 'colors';
+@import 'fonts';
+@import 'reset';
+@import 'nav';
+
+$cubic-bezier: cubic-bezier(0.75, 0, 0.125, 1);
+$color-gray: #e9e9e9;
+
+.grid {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1400px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  &__column {
+    flex: 1;
+    margin: 0 15px 30px 15px;
+  }
+}
+
+
+@mixin bg-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin abs-stretch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin card {
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding: 30px;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+@mixin card-title {
+  color: $white;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 0.2pt;
+}
+
+@mixin card-text {
+  color: $white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.card-news {
+  @include card();
+  display: block;
+  flex-direction: column;
+  min-width: 250px;
+  min-height: 300px;
+  padding: 0;
+  text-decoration: none;
+  color: $text-color;
+  transition: box-shadow 350ms;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.06);
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 16px 0 rgba(0, 2, 0, 0.2);
+    outline: 0;
+  }
+  
+  &__img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+  }
+  
+  &__category {
+    color: $white;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    user-select: none;
+    font-weight: 600;
+    letter-spacing: .1pt;
+  }
+  
+  &__img {
+    @include bg-image();
+    width: 100%;
+    height: 160px;
+    transition: transform 350ms;
+    transform: scale(1);
+    .card-news:hover & {
+      transform: scale(1.15);
+    }
+  }
+  
+  &__content {
+    padding: 20px;
+  }
+  
+  &__title {
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  &__date {
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0.4;
+    font-size: 14px;
+  }
+  
+  &__text {
+    color: #555;
+  }
+  
+  &__link {
+    display: block;
+    padding: 15px 20px;
+    color: $main-color;
+    font-weight: 600;
+    letter-spacing: 0.1pt;
+    border-top: 2px solid rgba($color-gray, 0.4);
+    transition: color 350ms;
+    .card-news:hover & {
+      color: lighten($main-color, 15%);
+    }
+  }
+}
+
+// footer
+.footer{
+    background-color: black;
+    height: 90px;
+    .social{
+      margin: 15px 0 10px 0;
+      img{
+        padding: 0 8px;
+      }
+    }
+    .copyright{
+      color: $white;
+      font-family: $prompt;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+   
