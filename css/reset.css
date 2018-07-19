@@ -1,0 +1,39 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  height: 100vh;
+}
+
+.gsapScroll {
+  opacity: 0;
+}
+
+div[class*="gsapFadeIn"] {
+  opacity: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  color: #ff753f;
+}
+
+small {
+  color: #aeaeae;
+}
+/*# sourceMappingURL=reset.css.map */

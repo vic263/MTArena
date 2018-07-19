@@ -1,49 +1,7 @@
+@import 'reset';
 @import 'colors';
 @import 'fonts';
-// reset
-body,html{
-  margin: 0;
-  padding: 0;
-  overflow-x:hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  font-family: $prompt;
-}
-  
-@mixin cf {
-  &::before,
-  &::after {
-    content: '';
-    display: table;
-  }
-  &::after {
-    clear: both;
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-a:hover{
-  text-decoration: none;
-}
-button:focus{
-  outline: none;
-}
-h1,h2,h3,h4{
-  color: $main-color;
-}
-small{
-  color: $text-color;
-}
-//nav
-.active>.nav-link{
-  color: $main-color !important;
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-  color: $main-color !important;
-}
+@import 'nav';
 
 //official partner
 .partner-logos{
@@ -784,6 +742,14 @@ small{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
+  .partner{
+    .title{
+      margin-bottom: 30px;
+      h2{
+        line-height: 1;
+      }
+    }
+  }
   .partner-logos {
     height: 230px;
   }
