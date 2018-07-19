@@ -10,7 +10,7 @@ $color-gray: #e9e9e9;
   /* Image */
   
   #image {
-    background-image: url(../img/banner-news-and-promotion.jpg);
+    background-image: url(../img/banner-csr.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -298,13 +298,5 @@ $color-gray: #e9e9e9;
       font-family: $prompt;
       font-size: 12px;
       text-align: center;
-    }
-  }
-  @media only screen and (min-width: 320px) and (max-width: 500px){
-    #heading_container {
-      h1{
-          font-size: 3rem;
-         
-      }
     }
   }
