@@ -189,6 +189,23 @@ small {
   color: #ffac8c;
 }
 
+.pagination {
+  margin: 30px 0 50px 0;
+}
+
+.page-link {
+  color: #ff753f;
+}
+
+.page-link:hover {
+  color: #ff753f;
+}
+
+.page-item.active .page-link {
+  background-color: #ff753f;
+  border-color: #ff753f;
+}
+
 .footer {
   background-color: black;
   height: 90px;

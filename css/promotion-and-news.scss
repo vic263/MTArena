@@ -142,7 +142,20 @@ $color-gray: #e9e9e9;
     }
   }
 }
-
+//pagination
+.pagination{
+    margin: 30px 0 50px 0;
+}
+.page-link{
+    color: $main-color;
+    &:hover{
+        color: $main-color;
+    }
+}
+.page-item.active .page-link{
+    background-color: $main-color;
+    border-color: $main-color;
+  }
 // footer
 .footer{
     background-color: black;
