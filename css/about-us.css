@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Prompt:300,400,500,600");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+body {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  height: 100vh;
+}
+
+.gsapScroll {
+  opacity: 0;
+}
+
+div[class*="gsapFadeIn"] {
+  opacity: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  color: #ff753f;
+}
+
+small {
+  color: #aeaeae;
+}
+
+.active > .nav-link {
+  color: #ff753f !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #ff753f !important;
+}
+
+/* Image */
+#image {
+  background-image: url(../img/banner-csr.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 520px;
+  height: 100%;
+}
+
+#overlay {
+  background-color: rgba(255, 109, 26, 0.6);
+  height: 100%;
+  overflow: hidden;
+}
+
+#heading_container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#heading_container h1 {
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+  font-family: "Prompt", sans-serif;
+  color: #ffffff;
+}
+
+.article {
+  max-width: 768px;
+  margin: 0 auto;
+  /* for mobile */
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 60px;
+  padding-bottom: 90px;
+  /* (shorthand) padding: 60px 30px 90px; */
+}
+
+/* yoink! dropbox colors http://brandcolors.net/ */
+/* sizes: http://www.modularscale.com/?16&px&1.8,1.34164&web&table */
+/* HEADER */
+.category {
+  font-family: "Prompt", sans-serif;
+  color: #7b8994;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.342em;
+  line-height: 1;
+}
+
+h1 {
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+  /* default */
+  font-size: 2.415em;
+  line-height: 1.2;
+  /*
+    letter-spacing: -1px;
+    color: @blue;
+    padding-bottom: 6px;
+    border-bottom: 2px solid @gray;
+    */
+}
+
+.pub-date {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  color: #7b8994;
+  text-transform: uppercase;
+  font-size: 74.5%;
+  font-size: 0.745em;
+  /* 74.5% of parent */
+}
+
+/* END HEADER */
+/* ARTICLE CONTENT */
+p {
+  /* we did most of the work in the body tag! */
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.342rem;
+  line-height: 1;
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+/* inline vs inline-block; */
+code {
+  display: inline;
+  /* display: inline-block; */
+  vertical-align: baseline;
+  padding-top: 0px;
+  /* padding-bottom: 300px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: whitesmoke;
+  /* background-color: fade(teal, 30%); */
+}
+
+/* What <display> are images ? */
+/* another great default, for your sanity. */
+img {
+  /* display: block; */
+  max-width: 100%;
+}
+
+sup {
+  font-family: 'Open Sans', sans-serif;
+}
+
+figure {
+  margin: 2em 0 1em;
+  /* what is a float ? */
+  /*
+    float: right;
+    width: 70%;
+    padding: 0;
+    margin-right: -25%;
+    margin-left: 1em;
+    */
+}
+
+figcaption {
+  font-family: 'Open Sans', sans-serif;
+  color: #7b8994;
+  line-height: 1.8em;
+  text-align: center;
+  padding: 0.5em 1em;
+}
+
+.pagination {
+  margin: 30px 0 50px 0;
+}
+
+.page-link {
+  color: #ff753f;
+}
+
+.page-link:hover {
+  color: #ff753f;
+}
+
+.page-item.active .page-link {
+  background-color: #ff753f;
+  border-color: #ff753f;
+}
+
+.footer {
+  background-color: black;
+  height: 90px;
+}
+
+.footer .social {
+  margin: 15px 0 10px 0;
+}
+
+.footer .social img {
+  padding: 0 8px;
+}
+
+.footer .copyright {
+  color: #ffffff;
+  font-family: "Prompt", sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+/*# sourceMappingURL=about-us.css.map */
